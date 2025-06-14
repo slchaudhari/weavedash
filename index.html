@@ -715,6 +715,177 @@ body, div, p {
     </div>
   </div>
 
+    <!-- Roll-Specific Grading Table -->
+  <div class="bg-[#1E1E1E] rounded-lg p-4 border border-neutral-700/20">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-lg font-semibold text-white">Roll Grading Summary</h3>
+      <div class="flex space-x-2">
+        <div class="relative">
+          <input type="text" placeholder="Search Rolls..." class="bg-neutral-800 border border-neutral-700 rounded-md py-1.5 px-3 text-sm text-white pr-8">
+          <div class="absolute right-2 top-1/2 transform -translate-y-1/2 text-neutral-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+        </div>
+        <select class="bg-neutral-800 border border-neutral-700 rounded-md py-1.5 px-3 text-sm text-white">
+          <option>All Grades</option>
+          <option>Grade A</option>
+          <option>Grade B</option>
+          <option>Grade C</option>
+          <option>Grade D</option>
+        </select>
+        <button class="bg-neutral-800 hover:bg-neutral-700 text-neutral-300 p-1.5 rounded text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-neutral-800">
+        <thead>
+          <tr>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Roll ID</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Plant/Machine</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Completion Date</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Defects/Meter</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Grade</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Material</th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-neutral-400 uppercase tracking-wider">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-800">
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78923</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 3 / M7</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 14, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.92</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-500/20 text-red-400">Grade D</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Cotton Blend</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78922</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 2 / M5</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 14, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.25</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500/20 text-green-400">Grade A</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Cotton</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78921</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 5 / M3</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 13, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.18</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500/20 text-green-400">Grade A</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Polyester</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78920</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 4 / M2</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 13, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.42</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-500/20 text-blue-400">Grade B</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Cotton Blend</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78919</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 1 / M4</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 13, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.33</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-500/20 text-blue-400">Grade B</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Linen</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">F78918</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Plant 6 / M1</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">June 12, 2023</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">0.61</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-500/20 text-yellow-400">Grade C</span>
+            </td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">Cotton</td>
+            <td class="px-4 py-3 whitespace-nowrap text-sm">
+              <div class="flex space-x-2">
+                <button class="text-blue-400 hover:text-blue-300">View</button>
+                <button class="text-blue-400 hover:text-blue-300">Report</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="mt-4 flex justify-between items-center">
+      <div class="text-sm text-neutral-400">
+        Showing <span class="font-medium text-white">1</span> to <span class="font-medium text-white">6</span> of <span class="font-medium text-white">157</span> rolls
+      </div>
+      <div class="flex space-x-1">
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm disabled:opacity-50 disabled:cursor-not-allowed" disabled="">
+          Previous
+        </button>
+        <button class="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded-md text-sm">
+          1
+        </button>
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm">
+          2
+        </button>
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm">
+          3
+        </button>
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm">
+          ...
+        </button>
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm">
+          26
+        </button>
+        <button class="px-3 py-1 bg-neutral-800 hover:bg-neutral-700 text-white rounded-md text-sm">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
   
   <!-- Plant Breakdown Modal -->
   <div id="plant-breakdown-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden" aria-modal="true" aria-hidden="true">
